@@ -5,7 +5,7 @@ module.exports = function (request, response, next) {
     request.session.flash = undefined
   }
 
-  request.flash = function(type, content) {
+  request.flash = function (type, content) {
     if (request.session.flash === undefined) {
       request.session.flash = {}
     }
